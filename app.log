@@ -4,3 +4,19 @@
 11:39:43.248 [RMI TCP Connection(2)-127.0.0.1] INFO  c.e.s.controller.CustomerController -- Initializing student controller 
 11:39:59.099 [RMI TCP Connection(4)-127.0.0.1] INFO  c.e.s.controller.CustomerController -- Initializing student controller 
 11:45:53.946 [RMI TCP Connection(2)-127.0.0.1] INFO  c.e.s.controller.CustomerController -- Initializing student controller 
+12:23:14.365 [RMI TCP Connection(2)-127.0.0.1] INFO  c.e.s.controller.CustomerController -- Initializing student controller 
+12:41:03.324 [RMI TCP Connection(2)-127.0.0.1] INFO  c.e.s.controller.CustomerController -- Initializing student controller 
+12:49:27.055 [http-nio-8080-exec-5] DEBUG c.e.s.controller.CustomerController -- called doPost method 
+12:51:29.179 [RMI TCP Connection(2)-127.0.0.1] INFO  c.e.s.controller.CustomerController -- Initializing student controller 
+12:52:04.330 [http-nio-8080-exec-7] DEBUG c.e.s.controller.CustomerController -- called doPost method 
+12:52:27.947 [http-nio-8080-exec-8] DEBUG c.e.s.controller.CustomerController -- called doPost method 
+12:52:58.727 [RMI TCP Connection(2)-127.0.0.1] INFO  c.e.s.controller.CustomerController -- Initializing student controller 
+12:53:05.565 [http-nio-8080-exec-4] DEBUG c.e.s.controller.CustomerController -- called doPost method 
+12:57:03.755 [RMI TCP Connection(2)-127.0.0.1] INFO  c.e.s.controller.CustomerController -- Initializing student controller 
+12:57:09.325 [http-nio-8080-exec-5] DEBUG c.e.s.controller.CustomerController -- called doPost method 
+13:11:37.885 [RMI TCP Connection(2)-127.0.0.1] INFO  c.e.s.controller.CustomerController -- Initializing student controller 
+13:12:11.908 [RMI TCP Connection(2)-127.0.0.1] INFO  c.e.s.controller.CustomerController -- Initializing student controller 
+13:13:08.959 [http-nio-8080-exec-1] DEBUG c.e.s.controller.CustomerController -- called doPost method 
+13:18:43.540 [RMI TCP Connection(2)-127.0.0.1] INFO  c.e.s.controller.CustomerController -- Initializing student controller 
+13:18:52.784 [http-nio-8080-exec-2] DEBUG c.e.s.controller.CustomerController -- called doPost method 
+13:19:37.014 [http-nio-8080-exec-5] DEBUG c.e.s.controller.CustomerController -- called doPost method 

@@ -1,14 +1,23 @@
 package com.example.storemanagementbackend.controller;
 
+import com.example.storemanagementbackend.Dao.CustomerDataImpl;
+import com.example.storemanagementbackend.Dto.CustomerDTO;
+import com.example.storemanagementbackend.Utill.UtilProcess;
+import jakarta.json.bind.Jsonb;
+import jakarta.json.bind.JsonbBuilder;
+import jakarta.json.bind.JsonbException;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import javax.naming.InitialContext;
 import javax.naming.NamingException;
 import javax.sql.DataSource;
+import java.io.IOException;
 import java.sql.Connection;
 import java.sql.SQLException;
 
@@ -33,6 +42,43 @@ public class CustomerController extends HttpServlet {
         }
         logger.info("Initializing student controller ");
 
+    }
+
+
+    @Override
+    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        //get student
+        String id = req.getParameter("id");
+        CustomerDataImpl customerData = new CustomerDataImpl();
+        try(var writer=resp.getWriter()){
+            CustomerDTO customerDTO = customerData.getCustomer(id, connection);
+            System.out.println(customerDTO);
+            resp.setContentType("application/json");
+            Jsonb jsonb = JsonbBuilder.create();
+            jsonb.toJson(customerDTO,writer);
+        }catch (RuntimeException e){
+            throw new RuntimeException(e);
+        }
+
+    }
+    @Override
+    protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        logger.debug("called doPost method ");
+        //save student-------------
+        if(!req.getContentType().toLowerCase().startsWith("application/json")||req.getContentType()==null){
+            //send error---------------
+            resp.sendError(HttpServletResponse.SC_UNSUPPORTED_MEDIA_TYPE);
+        }
+        try {
+            Jsonb jsonb = JsonbBuilder.create();
+            CustomerDTO customerDTO = jsonb.fromJson(req.getReader(), CustomerDTO.class);//jsonb eken kranne json type data tika object ekath ekka bind karana eka..
+            customerDTO.setId(UtilProcess.generateID());
+            System.out.println("dopost"+customerDTO);
+            CustomerDataImpl customerData = new CustomerDataImpl();
+            customerData.saveCustomer(customerDTO,connection);
+        } catch (JsonbException e) {
+            throw new RuntimeException(e);
+        }
     }
 
 }

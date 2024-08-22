@@ -1165,8 +1165,8 @@ sys|schema||mysql.sys|localhost|TRIGGER|G</Grants>
     </schema>
     <schema id="295" parent="1" name="Store-Management-API">
       <Current>1</Current>
-      <IntrospectionTimestamp>2024-08-22.17:15:59</IntrospectionTimestamp>
-      <LocalIntrospectionTimestamp>2024-08-22.06:15:59</LocalIntrospectionTimestamp>
+      <IntrospectionTimestamp>2024-08-22.18:49:49</IntrospectionTimestamp>
+      <LocalIntrospectionTimestamp>2024-08-22.07:49:49</LocalIntrospectionTimestamp>
       <CollationName>utf8mb4_0900_ai_ci</CollationName>
     </schema>
     <schema id="296" parent="1" name="ThigmaSmartLearn">
@@ -1279,5 +1279,44 @@ sys|schema||mysql.sys|localhost|TRIGGER|G</Grants>
     <user id="329" parent="1" name="root">
       <Host>localhost</Host>
     </user>
+    <table id="330" parent="295" name="customer">
+      <Engine>InnoDB</Engine>
+      <CollationName>utf8mb4_0900_ai_ci</CollationName>
+    </table>
+    <column id="331" parent="330" name="id">
+      <DasType>varchar(300)|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+    </column>
+    <column id="332" parent="330" name="nic">
+      <DasType>varchar(20)|0s</DasType>
+      <Position>2</Position>
+    </column>
+    <column id="333" parent="330" name="name">
+      <DasType>varchar(40)|0s</DasType>
+      <Position>3</Position>
+    </column>
+    <column id="334" parent="330" name="address">
+      <DasType>varchar(40)|0s</DasType>
+      <Position>4</Position>
+    </column>
+    <column id="335" parent="330" name="tel">
+      <DasType>varchar(11)|0s</DasType>
+      <Position>5</Position>
+    </column>
+    <column id="336" parent="330" name="regDate">
+      <DasType>varchar(20)|0s</DasType>
+      <Position>6</Position>
+    </column>
+    <index id="337" parent="330" name="PRIMARY">
+      <ColNames>id</ColNames>
+      <Type>btree</Type>
+      <Unique>1</Unique>
+    </index>
+    <key id="338" parent="330" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
+    </key>
   </database-model>
 </dataSource>
