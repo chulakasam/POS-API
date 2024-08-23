@@ -7,6 +7,7 @@ import jakarta.json.bind.Jsonb;
 import jakarta.json.bind.JsonbBuilder;
 import jakarta.json.bind.JsonbException;
 import jakarta.servlet.ServletException;
+import jakarta.servlet.annotation.WebFilter;
 import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
@@ -48,10 +49,10 @@ public class CustomerController extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         //get student
-        String id = req.getParameter("id");
+        String nic = req.getParameter("nic");
         CustomerDataImpl customerData = new CustomerDataImpl();
         try(var writer=resp.getWriter()){
-            CustomerDTO customerDTO = customerData.getCustomer(id, connection);
+            CustomerDTO customerDTO = customerData.getCustomer(nic, connection);
             System.out.println(customerDTO);
             resp.setContentType("application/json");
             Jsonb jsonb = JsonbBuilder.create();
@@ -59,7 +60,6 @@ public class CustomerController extends HttpServlet {
         }catch (RuntimeException e){
             throw new RuntimeException(e);
         }
-
     }
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
@@ -77,6 +77,31 @@ public class CustomerController extends HttpServlet {
             CustomerDataImpl customerData = new CustomerDataImpl();
             customerData.saveCustomer(customerDTO,connection);
         } catch (JsonbException e) {
+            throw new RuntimeException(e);
+        }
+    }
+
+
+    @Override
+    protected void doPut(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+
+        //update student
+        CustomerDataImpl customerData = new CustomerDataImpl();
+        try (var writer = resp.getWriter()){
+            var id = req.getParameter("id");
+            Jsonb jsonb = JsonbBuilder.create();
+            CustomerDTO Update_customer = jsonb.fromJson(req.getReader(), CustomerDTO.class);
+            if(customerData.updateCustomer(Update_customer,connection,id)){
+                resp.setStatus(HttpServletResponse.SC_NO_CONTENT);
+                System.out.println("doput"+customerData);
+            }else{
+                writer.write("Update Failed");
+                resp.sendError(HttpServletResponse.SC_BAD_REQUEST);
+            }
+
+
+        } catch (JsonbException e) {
+            resp.sendError(HttpServletResponse.SC_INTERNAL_SERVER_ERROR);
             throw new RuntimeException(e);
         }
     }

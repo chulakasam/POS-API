@@ -20,3 +20,19 @@
 13:18:43.540 [RMI TCP Connection(2)-127.0.0.1] INFO  c.e.s.controller.CustomerController -- Initializing student controller 
 13:18:52.784 [http-nio-8080-exec-2] DEBUG c.e.s.controller.CustomerController -- called doPost method 
 13:19:37.014 [http-nio-8080-exec-5] DEBUG c.e.s.controller.CustomerController -- called doPost method 
+09:05:43.538 [RMI TCP Connection(2)-127.0.0.1] INFO  c.e.s.controller.CustomerController -- Initializing student controller 
+09:05:49.331 [http-nio-8080-exec-1] DEBUG c.e.s.controller.CustomerController -- called doPost method 
+09:06:02.322 [http-nio-8080-exec-3] DEBUG c.e.s.controller.CustomerController -- called doPost method 
+09:22:27.346 [RMI TCP Connection(2)-127.0.0.1] INFO  c.e.s.controller.CustomerController -- Initializing student controller 
+09:53:19.513 [RMI TCP Connection(4)-127.0.0.1] INFO  c.e.s.controller.CustomerController -- Initializing student controller 
+10:07:28.213 [http-nio-8080-exec-9] DEBUG c.e.s.controller.CustomerController -- called doPost method 
+10:12:41.715 [http-nio-8080-exec-3] DEBUG c.e.s.controller.CustomerController -- called doPost method 
+10:14:29.741 [http-nio-8080-exec-9] DEBUG c.e.s.controller.CustomerController -- called doPost method 
+10:16:15.565 [RMI TCP Connection(2)-127.0.0.1] INFO  c.e.s.controller.CustomerController -- Initializing student controller 
+10:16:55.888 [http-nio-8080-exec-2] DEBUG c.e.s.controller.CustomerController -- called doPost method 
+10:20:19.102 [http-nio-8080-exec-6] DEBUG c.e.s.controller.CustomerController -- called doPost method 
+10:28:05.417 [http-nio-8080-exec-10] DEBUG c.e.s.controller.CustomerController -- called doPost method 
+10:28:13.723 [http-nio-8080-exec-2] DEBUG c.e.s.controller.CustomerController -- called doPost method 
+10:34:48.945 [RMI TCP Connection(2)-127.0.0.1] INFO  c.e.s.controller.CustomerController -- Initializing student controller 
+10:52:07.627 [RMI TCP Connection(2)-127.0.0.1] INFO  c.e.s.controller.CustomerController -- Initializing student controller 
+11:19:56.646 [RMI TCP Connection(2)-127.0.0.1] INFO  c.e.s.controller.CustomerController -- Initializing student controller 
