@@ -83,27 +83,33 @@ public class CustomerController extends HttpServlet {
 
     @Override
     protected void doPut(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-
-        //update student
         CustomerDataImpl customerData = new CustomerDataImpl();
-        try (var writer = resp.getWriter()){
-            var nic = req.getParameter("nic");
-            Jsonb jsonb = JsonbBuilder.create();
-            CustomerDTO Update_customer = jsonb.fromJson(req.getReader(), CustomerDTO.class);
-            if(customerData.updateCustomer(Update_customer,connection,nic)){
-                resp.setStatus(HttpServletResponse.SC_NO_CONTENT);
-                System.out.println("doput"+customerData);
-            }else{
-                writer.write("Update Failed");
-                resp.sendError(HttpServletResponse.SC_BAD_REQUEST);
+        try (var writer = resp.getWriter()) {
+            // Retrieve the NIC from the query parameter
+            String nic = req.getParameter("nic");
+            if (nic == null || nic.isEmpty()) {
+                resp.sendError(HttpServletResponse.SC_BAD_REQUEST, "NIC is required");
+                return;
             }
 
+            // Parse the incoming JSON request
+            Jsonb jsonb = JsonbBuilder.create();
+            CustomerDTO updateCustomer = jsonb.fromJson(req.getReader(), CustomerDTO.class);
 
+            // Update the customer information
+            boolean isUpdated = customerData.updateCustomer(updateCustomer, connection, nic);
+            if (isUpdated) {
+                resp.setStatus(HttpServletResponse.SC_NO_CONTENT); // 204 No Content
+            } else {
+                resp.sendError(HttpServletResponse.SC_BAD_REQUEST, "Update Failed");
+            }
         } catch (JsonbException e) {
-            resp.sendError(HttpServletResponse.SC_INTERNAL_SERVER_ERROR);
+            resp.sendError(HttpServletResponse.SC_INTERNAL_SERVER_ERROR, "Error processing JSON data");
             throw new RuntimeException(e);
         }
     }
+
+
 
 
     @Override
