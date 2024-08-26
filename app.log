@@ -36,3 +36,101 @@
 10:34:48.945 [RMI TCP Connection(2)-127.0.0.1] INFO  c.e.s.controller.CustomerController -- Initializing student controller 
 10:52:07.627 [RMI TCP Connection(2)-127.0.0.1] INFO  c.e.s.controller.CustomerController -- Initializing student controller 
 11:19:56.646 [RMI TCP Connection(2)-127.0.0.1] INFO  c.e.s.controller.CustomerController -- Initializing student controller 
+14:57:20.979 [RMI TCP Connection(2)-127.0.0.1] INFO  c.e.s.controller.CustomerController -- Initializing student controller 
+15:46:54.286 [RMI TCP Connection(2)-127.0.0.1] INFO  c.e.s.controller.CustomerController -- Initializing customer controller 
+15:57:48.891 [RMI TCP Connection(2)-127.0.0.1] INFO  c.e.s.controller.CustomerController -- Initializing customer controller 
+16:00:00.757 [RMI TCP Connection(2)-127.0.0.1] INFO  c.e.s.controller.CustomerController -- Initializing customer controller 
+16:00:06.555 [http-nio-8080-exec-2] DEBUG c.e.s.controller.CustomerController -- called doPost method 
+16:00:15.034 [http-nio-8080-exec-4] DEBUG c.e.s.controller.CustomerController -- called doPost method 
+16:10:13.434 [RMI TCP Connection(2)-127.0.0.1] INFO  c.e.s.controller.CustomerController -- Initializing customer controller 
+16:10:13.447 [RMI TCP Connection(2)-127.0.0.1] INFO  c.e.s.controller.ItemController -- Initializing item controller 
+16:25:16.037 [RMI TCP Connection(4)-127.0.0.1] INFO  c.e.s.controller.CustomerController -- Initializing customer controller 
+16:25:16.094 [RMI TCP Connection(4)-127.0.0.1] INFO  c.e.s.controller.ItemController -- Initializing item controller 
+16:26:11.002 [RMI TCP Connection(2)-127.0.0.1] INFO  c.e.s.controller.CustomerController -- Initializing customer controller 
+16:26:11.029 [RMI TCP Connection(2)-127.0.0.1] INFO  c.e.s.controller.ItemController -- Initializing item controller 
+16:27:03.753 [RMI TCP Connection(2)-127.0.0.1] INFO  c.e.s.controller.CustomerController -- Initializing customer controller 
+16:27:03.777 [RMI TCP Connection(2)-127.0.0.1] INFO  c.e.s.controller.ItemController -- Initializing item controller 
+16:29:20.019 [RMI TCP Connection(2)-127.0.0.1] INFO  c.e.s.controller.CustomerController -- Initializing customer controller 
+16:30:07.663 [RMI TCP Connection(4)-127.0.0.1] INFO  c.e.s.controller.CustomerController -- Initializing customer controller 
+16:38:01.079 [RMI TCP Connection(4)-127.0.0.1] INFO  c.e.s.controller.CustomerController -- Initializing customer controller 
+16:38:01.098 [RMI TCP Connection(4)-127.0.0.1] INFO  c.e.s.controller.ItemController -- Initializing item controller 
+16:46:47.695 [RMI TCP Connection(2)-127.0.0.1] INFO  c.e.s.controller.CustomerController -- Initializing customer controller 
+16:46:54.429 [RMI TCP Connection(2)-127.0.0.1] INFO  c.e.s.controller.CustomerController -- Initializing customer controller 
+16:47:33.807 [http-nio-8080-exec-1] DEBUG c.e.s.controller.CustomerController -- called doPost method 
+16:47:43.323 [http-nio-8080-exec-2] DEBUG c.e.s.controller.CustomerController -- called doPost method 
+16:56:25.163 [RMI TCP Connection(4)-127.0.0.1] INFO  c.e.s.controller.CustomerController -- Initializing customer controller 
+14:03:46.565 [RMI TCP Connection(4)-127.0.0.1] INFO  c.e.s.controller.CustomerController -- Initializing customer controller 
+16:52:43.004 [RMI TCP Connection(2)-127.0.0.1] INFO  c.e.s.controller.CustomerController -- Initializing customer controller 
+17:19:19.466 [RMI TCP Connection(2)-127.0.0.1] INFO  c.e.s.controller.CustomerController -- Initializing customer controller 
+17:21:52.885 [RMI TCP Connection(4)-127.0.0.1] INFO  c.e.s.controller.CustomerController -- Initializing customer controller 
+17:25:12.464 [http-nio-8080-exec-2] DEBUG c.e.s.controller.CustomerController -- called doPost method 
+17:25:43.400 [RMI TCP Connection(2)-127.0.0.1] INFO  c.e.s.controller.CustomerController -- Initializing customer controller 
+17:25:58.040 [http-nio-8080-exec-2] DEBUG c.e.s.controller.CustomerController -- called doPost method 
+17:26:04.226 [http-nio-8080-exec-4] DEBUG c.e.s.controller.CustomerController -- called doPost method 
+17:27:26.331 [RMI TCP Connection(2)-127.0.0.1] INFO  c.e.s.controller.CustomerController -- Initializing customer controller 
+17:27:34.449 [http-nio-8080-exec-2] DEBUG c.e.s.controller.CustomerController -- called doPost method 
+17:33:15.602 [RMI TCP Connection(2)-127.0.0.1] INFO  c.e.s.controller.CustomerController -- Initializing customer controller 
+17:33:23.348 [http-nio-8080-exec-2] DEBUG c.e.s.controller.CustomerController -- called doPost method 
+17:39:48.138 [RMI TCP Connection(2)-127.0.0.1] INFO  c.e.s.controller.CustomerController -- Initializing customer controller 
+17:40:48.630 [RMI TCP Connection(2)-127.0.0.1] INFO  c.e.s.controller.CustomerController -- Initializing customer controller 
+17:40:48.644 [RMI TCP Connection(2)-127.0.0.1] INFO  c.e.s.controller.ItemController -- Initializing customer controller 
+17:41:02.679 [http-nio-8080-exec-3] DEBUG c.e.s.controller.CustomerController -- called doPost method 
+17:44:09.212 [http-nio-8080-exec-5] DEBUG c.e.s.controller.CustomerController -- called doPost method 
+17:44:49.079 [RMI TCP Connection(2)-127.0.0.1] INFO  c.e.s.controller.CustomerController -- Initializing customer controller 
+17:44:49.091 [RMI TCP Connection(2)-127.0.0.1] INFO  c.e.s.controller.ItemController -- Initializing item controller 
+17:47:55.247 [RMI TCP Connection(2)-127.0.0.1] INFO  c.e.s.controller.CustomerController -- Initializing customer controller 
+17:47:55.264 [RMI TCP Connection(2)-127.0.0.1] INFO  c.e.s.controller.ItemController -- Initializing item controller 
+17:48:11.622 [http-nio-8080-exec-2] DEBUG c.e.s.controller.CustomerController -- called doPost method 
+17:49:51.580 [RMI TCP Connection(2)-127.0.0.1] INFO  c.e.s.controller.CustomerController -- Initializing customer controller 
+17:49:51.594 [RMI TCP Connection(2)-127.0.0.1] INFO  c.e.s.controller.ItemController -- Initializing item controller 
+17:50:42.922 [http-nio-8080-exec-2] DEBUG c.e.s.controller.CustomerController -- called doPost method 
+17:54:46.544 [RMI TCP Connection(2)-127.0.0.1] INFO  c.e.s.controller.CustomerController -- Initializing customer controller 
+17:54:46.557 [RMI TCP Connection(2)-127.0.0.1] INFO  c.e.s.controller.ItemController -- Initializing item controller 
+17:55:21.626 [RMI TCP Connection(2)-127.0.0.1] INFO  c.e.s.controller.CustomerController -- Initializing customer controller 
+17:55:21.639 [RMI TCP Connection(2)-127.0.0.1] INFO  c.e.s.controller.ItemController -- Initializing item controller 
+17:55:33.968 [http-nio-8080-exec-2] DEBUG c.e.s.controller.CustomerController -- called doPost method 
+18:04:57.275 [RMI TCP Connection(2)-127.0.0.1] INFO  c.e.s.controller.CustomerController -- Initializing customer controller 
+18:04:57.289 [RMI TCP Connection(2)-127.0.0.1] INFO  c.e.s.controller.ItemController -- Initializing item controller 
+18:05:24.994 [RMI TCP Connection(2)-127.0.0.1] INFO  c.e.s.controller.CustomerController -- Initializing customer controller 
+18:05:25.005 [RMI TCP Connection(2)-127.0.0.1] INFO  c.e.s.controller.ItemController -- Initializing item controller 
+18:06:42.905 [RMI TCP Connection(2)-127.0.0.1] INFO  c.e.s.controller.CustomerController -- Initializing customer controller 
+18:06:42.917 [RMI TCP Connection(2)-127.0.0.1] INFO  c.e.s.controller.ItemController -- Initializing item controller 
+18:06:55.609 [http-nio-8080-exec-2] DEBUG c.e.s.controller.CustomerController -- called doPost method 
+18:07:00.927 [http-nio-8080-exec-4] DEBUG c.e.s.controller.CustomerController -- called doPost method 
+18:07:01.857 [http-nio-8080-exec-5] DEBUG c.e.s.controller.CustomerController -- called doPost method 
+18:07:11.239 [http-nio-8080-exec-7] DEBUG c.e.s.controller.CustomerController -- called doPost method 
+18:07:27.637 [http-nio-8080-exec-9] DEBUG c.e.s.controller.CustomerController -- called doPost method 
+18:19:15.705 [RMI TCP Connection(2)-127.0.0.1] INFO  c.e.s.controller.CustomerController -- Initializing customer controller 
+18:19:15.719 [RMI TCP Connection(2)-127.0.0.1] INFO  c.e.s.controller.ItemController -- Initializing item controller 
+18:19:38.637 [http-nio-8080-exec-1] DEBUG c.e.s.controller.CustomerController -- called doPost method 
+18:23:49.684 [RMI TCP Connection(2)-127.0.0.1] INFO  c.e.s.controller.CustomerController -- Initializing customer controller 
+18:23:49.698 [RMI TCP Connection(2)-127.0.0.1] INFO  c.e.s.controller.ItemController -- Initializing item controller 
+18:24:03.464 [http-nio-8080-exec-2] DEBUG c.e.s.controller.CustomerController -- called doPost method 
+18:25:19.187 [RMI TCP Connection(2)-127.0.0.1] INFO  c.e.s.controller.CustomerController -- Initializing customer controller 
+18:25:19.201 [RMI TCP Connection(2)-127.0.0.1] INFO  c.e.s.controller.ItemController -- Initializing item controller 
+18:26:17.823 [http-nio-8080-exec-1] DEBUG c.e.s.controller.CustomerController -- called doPost method 
+18:28:16.390 [RMI TCP Connection(2)-127.0.0.1] INFO  c.e.s.controller.CustomerController -- Initializing customer controller 
+18:28:16.403 [RMI TCP Connection(2)-127.0.0.1] INFO  c.e.s.controller.ItemController -- Initializing item controller 
+18:28:31.086 [http-nio-8080-exec-2] DEBUG c.e.s.controller.CustomerController -- called doPost method 
+18:30:51.336 [http-nio-8080-exec-5] DEBUG c.e.s.controller.CustomerController -- called doPost method 
+18:32:36.276 [RMI TCP Connection(2)-127.0.0.1] INFO  c.e.s.controller.CustomerController -- Initializing customer controller 
+18:32:36.288 [RMI TCP Connection(2)-127.0.0.1] INFO  c.e.s.controller.ItemController -- Initializing item controller 
+18:33:02.292 [http-nio-8080-exec-2] DEBUG c.e.s.controller.CustomerController -- called doPost method 
+18:45:11.952 [RMI TCP Connection(2)-127.0.0.1] INFO  c.e.s.controller.CustomerController -- Initializing customer controller 
+18:45:11.978 [RMI TCP Connection(2)-127.0.0.1] INFO  c.e.s.controller.ItemController -- Initializing item controller 
+18:45:34.846 [RMI TCP Connection(2)-127.0.0.1] INFO  c.e.s.controller.CustomerController -- Initializing customer controller 
+18:45:34.868 [RMI TCP Connection(2)-127.0.0.1] INFO  c.e.s.controller.ItemController -- Initializing item controller 
+18:46:12.914 [http-nio-8080-exec-1] DEBUG c.e.s.controller.CustomerController -- called doPost method 
+18:48:17.270 [RMI TCP Connection(2)-127.0.0.1] INFO  c.e.s.controller.CustomerController -- Initializing customer controller 
+18:48:17.271 [RMI TCP Connection(2)-127.0.0.1] ERROR c.e.s.controller.ItemController -- info failed messageName [itemRegistration] is not bound in this Context. Unable to find [itemRegistration].
+18:48:17.272 [RMI TCP Connection(2)-127.0.0.1] INFO  c.e.s.controller.ItemController -- Initializing item controller 
+18:49:25.065 [RMI TCP Connection(2)-127.0.0.1] INFO  c.e.s.controller.CustomerController -- Initializing customer controller 
+20:41:56.479 [RMI TCP Connection(2)-127.0.0.1] INFO  c.e.s.controller.CustomerController -- Initializing customer controller 
+20:42:38.337 [http-nio-8080-exec-5] DEBUG c.e.s.controller.CustomerController -- called doPost method 
+20:48:27.219 [RMI TCP Connection(2)-127.0.0.1] INFO  c.e.s.controller.CustomerController -- Initializing customer controller 
+21:17:50.051 [RMI TCP Connection(2)-127.0.0.1] INFO  c.e.s.controller.CustomerController -- Initializing customer controller 
+21:18:21.304 [http-nio-8080-exec-4] DEBUG c.e.s.controller.CustomerController -- called doPost method 
+21:18:27.787 [http-nio-8080-exec-6] DEBUG c.e.s.controller.CustomerController -- called doPost method 
+16:18:02.141 [RMI TCP Connection(2)-127.0.0.1] INFO  c.e.s.controller.CustomerController -- Initializing customer controller 
+16:22:38.183 [RMI TCP Connection(2)-127.0.0.1] INFO  c.e.s.controller.CustomerController -- Initializing customer controller 
+16:27:28.574 [RMI TCP Connection(2)-127.0.0.1] INFO  c.e.s.controller.CustomerController -- Initializing customer controller 

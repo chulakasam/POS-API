@@ -10,11 +10,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b29a73db-b9e4-4ba1-81d6-a32129272108" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/f290321a-7b90-4139-864a-0663182c5407.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/f290321a-7b90-4139-864a-0663182c5407.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/f290321a-7b90-4139-864a-0663182c5407/storage_v2/_src_/schema/Store-Management-API.HMh36A.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/f290321a-7b90-4139-864a-0663182c5407/storage_v2/_src_/schema/Store-Management-API.HMh36A.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app.log" beforeDir="false" afterPath="$PROJECT_DIR$/app.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/storemanagementbackend/Dao/CustomerDataImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/storemanagementbackend/Dao/CustomerDataImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/storemanagementbackend/Dto/CustomerDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/storemanagementbackend/Dto/CustomerDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/storemanagementbackend/Filter/CORPSFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/storemanagementbackend/Filter/CORPSFilter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/storemanagementbackend/controller/CustomerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/storemanagementbackend/controller/CustomerController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/META-INF/context.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/META-INF/context.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,9 +48,9 @@
     <option name="FILTER_DEBUG" value="true" />
     <option name="CUSTOM_FILTER" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 4
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 4
+}</component>
   <component name="ProjectId" id="2l050Ncb3BVitMrgNBNZ8nOQScY" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
@@ -58,6 +64,7 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/sampath/Documents/AAD/POS-API-main&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -176,7 +183,15 @@
       <workItem from="1724303931385" duration="5603000" />
       <workItem from="1724309634520" duration="946000" />
       <workItem from="1724310609687" duration="2435000" />
-      <workItem from="1724384089951" duration="7619000" />
+      <workItem from="1724384089951" duration="10067000" />
+      <workItem from="1724405082903" duration="5000" />
+      <workItem from="1724405097757" duration="2261000" />
+      <workItem from="1724407438207" duration="1163000" />
+      <workItem from="1724408819210" duration="4239000" />
+      <workItem from="1724574219669" duration="884000" />
+      <workItem from="1724584622857" duration="9846000" />
+      <workItem from="1724600693784" duration="457000" />
+      <workItem from="1724668446700" duration="1313000" />
     </task>
     <servers />
   </component>

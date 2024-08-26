@@ -41,7 +41,7 @@ public class CustomerController extends HttpServlet {
             logger.error("info failed message"+e.getMessage());
             e.printStackTrace();
         }
-        logger.info("Initializing student controller ");
+        logger.info("Initializing customer controller ");
 
     }
 
@@ -72,7 +72,7 @@ public class CustomerController extends HttpServlet {
         try {
             Jsonb jsonb = JsonbBuilder.create();
             CustomerDTO customerDTO = jsonb.fromJson(req.getReader(), CustomerDTO.class);//jsonb eken kranne json type data tika object ekath ekka bind karana eka..
-            customerDTO.setId(UtilProcess.generateID());
+
             System.out.println("dopost"+customerDTO);
             CustomerDataImpl customerData = new CustomerDataImpl();
             customerData.saveCustomer(customerDTO,connection);
@@ -81,17 +81,16 @@ public class CustomerController extends HttpServlet {
         }
     }
 
-
     @Override
     protected void doPut(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
         //update student
         CustomerDataImpl customerData = new CustomerDataImpl();
         try (var writer = resp.getWriter()){
-            var id = req.getParameter("id");
+            var nic = req.getParameter("nic");
             Jsonb jsonb = JsonbBuilder.create();
             CustomerDTO Update_customer = jsonb.fromJson(req.getReader(), CustomerDTO.class);
-            if(customerData.updateCustomer(Update_customer,connection,id)){
+            if(customerData.updateCustomer(Update_customer,connection,nic)){
                 resp.setStatus(HttpServletResponse.SC_NO_CONTENT);
                 System.out.println("doput"+customerData);
             }else{
@@ -106,4 +105,24 @@ public class CustomerController extends HttpServlet {
         }
     }
 
+
+    @Override
+    protected void doDelete(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        //delete customer
+        String id = req.getParameter("nic");
+        try {
+            CustomerDataImpl customerData = new CustomerDataImpl();
+            customerData.deleteCustomer(id,connection);
+
+        } catch (JsonbException e) {
+            resp.sendError(HttpServletResponse.SC_INTERNAL_SERVER_ERROR);
+            throw new RuntimeException(e);
+        }
+    }
+
+
 }
+
+
+
+

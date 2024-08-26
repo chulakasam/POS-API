@@ -18,7 +18,7 @@ public class CORPSFilter extends HttpFilter {
 
         if(origin.contains(configedOrigin)){
             res.setHeader("Access-Control-Allow-Origin",origin);
-            res.setHeader("Access-Control-Allow-Methods","GET,POST,PUT,DELETE,PATCH,OPTIONS");
+            res.setHeader("Access-Control-Allow-Methods","GET,POST,PUT,DELETE,PATCH,OPTIONS,PATCH");
             res.setHeader("Access-Control-Allow-Headers","Content-Type");
             res.setHeader("Access-Control-Expose-Headers","Content-Type");
         }

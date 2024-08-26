@@ -8,9 +8,10 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 
 public class CustomerDataImpl implements CustomerData{
-    static String SAVE_STUDENT="INSERT INTO customer (id,nic,name,address,tel,regDate)VALUES(?,?,?,?,?,?) ";
+    static String SAVE_STUDENT="INSERT INTO customer (nic,name,address,tel,regDate)VALUES(?,?,?,?,?) ";
     static String GET_STUDENT="SELECT * FROM customer WHERE nic=?";
-    static String UPDATE_STUDENT="UPDATE customer SET  nic=?name=?,address=?,tel=?,regDate=? WHERE id=?";
+    static String UPDATE_STUDENT="UPDATE customer SET  name=?,address=?,tel=?,regDate=? WHERE nic=?";
+    static String DELETE_STUDENT="DELETE FROM customer WHERE nic=?";
 
     @Override
     public CustomerDTO getCustomer(String nic, Connection connection) {
@@ -36,12 +37,12 @@ public class CustomerDataImpl implements CustomerData{
     public String saveCustomer(CustomerDTO customerDTO, Connection connection) {
         try {
             PreparedStatement pstm = connection.prepareStatement(SAVE_STUDENT);
-            pstm.setString(1,customerDTO.getId());
-            pstm.setString(2,customerDTO.getNic());
-            pstm.setString(3,customerDTO.getName());
-            pstm.setString(4,customerDTO.getAddress());
-            pstm.setString(5,customerDTO.getTel());
-            pstm.setString(6,customerDTO.getRegDate());
+
+            pstm.setString(1,customerDTO.getNic());
+            pstm.setString(2,customerDTO.getName());
+            pstm.setString(3,customerDTO.getAddress());
+            pstm.setString(4,customerDTO.getTel());
+            pstm.setString(5,customerDTO.getRegDate());
             if(pstm.executeUpdate()>0){
                 return  "save successful";
             }else{
@@ -53,23 +54,31 @@ public class CustomerDataImpl implements CustomerData{
 
     }
 
-
     @Override
     public String deleteCustomer(String id, Connection connection) {
-        return null;
+        try {
+            PreparedStatement pstm = connection.prepareStatement(DELETE_STUDENT);
+            pstm.setString(1,id);
+            if(pstm.executeUpdate()>0){
+                return "DELETE SUCCESS!!";
+            }else{
+                return "DELETE FAILED";
+            }
+        }catch (SQLException e){
+            throw new RuntimeException(e);
+        }
     }
-
     @Override
-    public boolean updateCustomer(CustomerDTO customerDTO, Connection connection, String id) {
+    public boolean updateCustomer(CustomerDTO customerDTO, Connection connection, String nic) {
         try {
             PreparedStatement pstm = connection.prepareStatement(UPDATE_STUDENT);
-            pstm.setString(1, customerDTO.getNic());
-            pstm.setString(2, customerDTO.getName());
-            pstm.setString(3, customerDTO.getAddress());
-            pstm.setString(4, customerDTO.getTel());
-            pstm.setString(5, customerDTO.getRegDate());
+
+            pstm.setString(1, customerDTO.getName());
+            pstm.setString(2, customerDTO.getAddress());
+            pstm.setString(3, customerDTO.getTel());
+            pstm.setString(4, customerDTO.getRegDate());
             ;
-            pstm.setString(6, id);
+            pstm.setString(5, nic);
             return pstm.executeUpdate()>0;
         }catch (SQLException e){
             throw new RuntimeException(e);
