@@ -29,21 +29,21 @@ Database Configuration
 **Example API Endpoints:**
 
 Customer Operations 
-GET /customer 
-POST /customer
-PUT /customer/{nic}
-DELETE customers/{nic}
+- GET /customer 
+- POST /customer
+- PUT /customer/{nic}
+- DELETE customers/{nic}
 
 * Item Operation
-GET /item
-POST /item
-PUT /item/{id}
-DELETE /item/{id}
+- GET /item
+- POST /item
+- PUT /item/{id}
+- DELETE /item/{id}
 
 * Order Operations
 
-GET /orders
-POST /orders
+- GET /orders
+- POST /orders
 
 **Logging**
 Logging is implemented using Jakarta EE's built-in logging mechanisms. Different logging levels (INFO, DEBUG, ERROR) are applied appropriately to capture application events, aiding in monitoring and troubleshooting.
