@@ -103,7 +103,33 @@ public class ItemController extends HttpServlet {
     }
 
 
+    @Override
+    protected void doPut(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+       ItemDataImpl itemData = new ItemDataImpl();
+        try (var writer = resp.getWriter()) {
+            // Retrieve the code from the query parameter
+            String code = req.getParameter("code");
+            if (code == null || code.isEmpty()) {
+                resp.sendError(HttpServletResponse.SC_BAD_REQUEST, "ITEM CODE is required");
+                return;
+            }
 
+            // Parse the incoming JSON request
+            Jsonb jsonb = JsonbBuilder.create();
+            ItemDTO updateItem = jsonb.fromJson(req.getReader(), ItemDTO.class);
+
+            // Update the customer information
+            boolean isUpdated = itemData.updateItem(updateItem, connection, code);
+            if (isUpdated) {
+                resp.setStatus(HttpServletResponse.SC_NO_CONTENT); // 204 No Content
+            } else {
+                resp.sendError(HttpServletResponse.SC_BAD_REQUEST, "Update Failed");
+            }
+        } catch (JsonbException e) {
+            resp.sendError(HttpServletResponse.SC_INTERNAL_SERVER_ERROR, "Error processing JSON data");
+            throw new RuntimeException(e);
+        }
+    }
 
 
 

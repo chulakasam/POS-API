@@ -164,3 +164,7 @@
 08:38:05.541 [RMI TCP Connection(2)-127.0.0.1] INFO  c.e.s.controller.ItemController -- Initializing item controller 
 08:38:34.368 [RMI TCP Connection(2)-127.0.0.1] INFO  c.e.s.controller.CustomerController -- Initializing customer controller 
 08:38:34.394 [RMI TCP Connection(2)-127.0.0.1] INFO  c.e.s.controller.ItemController -- Initializing item controller 
+08:42:14.066 [RMI TCP Connection(2)-127.0.0.1] INFO  c.e.s.controller.CustomerController -- Initializing customer controller 
+08:42:14.089 [RMI TCP Connection(2)-127.0.0.1] INFO  c.e.s.controller.ItemController -- Initializing item controller 
+08:43:25.317 [RMI TCP Connection(2)-127.0.0.1] INFO  c.e.s.controller.CustomerController -- Initializing customer controller 
+08:43:25.353 [RMI TCP Connection(2)-127.0.0.1] INFO  c.e.s.controller.ItemController -- Initializing item controller 
