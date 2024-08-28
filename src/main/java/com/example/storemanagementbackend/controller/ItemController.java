@@ -34,9 +34,9 @@ public class ItemController extends HttpServlet {
     @Override
     public void init() throws ServletException {
 
-       /* try {
+      try {
             var ctx = new InitialContext();
-            DataSource pool = (DataSource)ctx.lookup("java:comp/env/jdbc/itemRegistration");
+            DataSource pool = (DataSource)ctx.lookup("java:comp/env/jdbc/storeRegistration");
             this.connection = pool.getConnection();
         }catch (NamingException | SQLException e){
             logger.error("info failed message"+e.getMessage());
@@ -44,7 +44,7 @@ public class ItemController extends HttpServlet {
         }
         logger.info("Initializing item controller ");
 
-        */
+
 
     }
 
@@ -64,12 +64,66 @@ public class ItemController extends HttpServlet {
             ItemDTO itemDTO = jsonb.fromJson(req.getReader(), ItemDTO.class);//jsonb eken kranne json type data tika object ekath ekka bind karana eka..
 
             System.out.println("dopost"+itemDTO);
+
             ItemDataImpl itemData = new ItemDataImpl();
             itemData.saveItem(itemDTO,connection);
         } catch (JsonbException e) {
             throw new RuntimeException(e);
         }
     }
+
+    @Override
+    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        //get item
+        String code = req.getParameter("code");
+        ItemDataImpl itemData = new ItemDataImpl();
+        try(var writer=resp.getWriter()){
+            ItemDTO itemDTO = itemData.getItem(code, connection);
+            System.out.println(itemDTO);
+            resp.setContentType("application/json");
+            Jsonb jsonb = JsonbBuilder.create();
+            jsonb.toJson(itemDTO,writer);
+        }catch (RuntimeException e){
+            throw new RuntimeException(e);
+        }
+    }
+
+    @Override
+    protected void doDelete(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        //delete item
+        String code = req.getParameter("code");
+        try {
+            ItemDataImpl itemData = new ItemDataImpl();
+            itemData.deleteItem(code,connection);
+
+        } catch (JsonbException e) {
+            resp.sendError(HttpServletResponse.SC_INTERNAL_SERVER_ERROR);
+            throw new RuntimeException(e);
+        }
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
 
 

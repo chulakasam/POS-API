@@ -10,7 +10,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b29a73db-b9e4-4ba1-81d6-a32129272108" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.log" beforeDir="false" afterPath="$PROJECT_DIR$/app.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/storemanagementbackend/controller/CustomerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/storemanagementbackend/controller/CustomerController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/storemanagementbackend/controller/ItemController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/storemanagementbackend/controller/ItemController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,6 +80,7 @@
   <component name="RunManager">
     <configuration name="Tomcat 11.0.0-M20" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 11.0.0-M20" ALTERNATIVE_JRE_ENABLED="true" ALTERNATIVE_JRE_PATH="21">
       <option name="OPEN_IN_BROWSER" value="false" />
+      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/customer" />
       <deployment>
         <artifact name="Store-Management-BACKEND:war exploded">
           <settings>
@@ -182,7 +187,10 @@
       <workItem from="1724584622857" duration="9846000" />
       <workItem from="1724600693784" duration="457000" />
       <workItem from="1724668446700" duration="1313000" />
-      <workItem from="1724669801727" duration="1875000" />
+      <workItem from="1724669801727" duration="2823000" />
+      <workItem from="1724808901711" duration="2770000" />
+      <workItem from="1724811742682" duration="314000" />
+      <workItem from="1724812065025" duration="1897000" />
     </task>
     <servers />
   </component>
