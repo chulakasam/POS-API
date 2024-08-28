@@ -1,34 +1,35 @@
-POS System Backend
+**POS System Backend**
+
 This repository contains the backend API for the Point of Sale (POS) system. The frontend has already been developed, and this backend is designed to integrate seamlessly with it, providing robust, scalable, and secure services to handle the core business logic and data management.
 
-Introduction
+**Introduction**
 The POS System is designed to manage customer orders, inventory, and sales efficiently. This backend was developed using Jakarta EE, with a focus on maintaining a proper layered architecture, applying best practices in coding, and ensuring secure database interactions.
 
-Tech Stack
-Jakarta EE:
+**Tech Stack**
+**Jakarta EE:**
  Enterprise framework for building robust and scalable applications.
-MySQL:
+**MySQL:**
  Relational database for storing persistent data.
-AJAX/Fetch:
+**AJAX/Fetch:**
  Used for asynchronous communication between the frontend and backend.
-JNDI:
+**JNDI:**
  Java Naming and Directory Interface for managing database configuration.
 Database Configuration
  Database connectivity is managed using JNDI. The persistence.xml or relevant configuration files are set up to ensure secure and efficient access to the MySQL database.
 
-Database:
+**Database:**
    MySQL
-JNDI Name:
+**JNDI Name:**
    java:/comp/env/jdbc/storeRegistration
-Schema:
+**Schema:**
    The database schema includes tables for Customers, Orders, Items, and Order Details.
-API Endpoints
+**API Endpoints**
    The backend exposes a set of RESTful APIs to perform operations like creating orders, updating customer information, and managing inventory. Detailed documentation for these endpoints is provided here.
 
-Example API Endpoints:
+**Example API Endpoints:**
 
-* Customer Operations
-GET /customer
+Customer Operations 
+GET /customer 
 POST /customer
 PUT /customer/{nic}
 DELETE customers/{nic}
@@ -44,10 +45,10 @@ DELETE /item/{id}
 GET /orders
 POST /orders
 
-Logging
+**Logging**
 Logging is implemented using Jakarta EE's built-in logging mechanisms. Different logging levels (INFO, DEBUG, ERROR) are applied appropriately to capture application events, aiding in monitoring and troubleshooting.
 
-Getting Started
+**Getting Started**
 To set up the project locally:
 
 
