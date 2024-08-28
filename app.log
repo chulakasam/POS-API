@@ -168,3 +168,22 @@
 08:42:14.089 [RMI TCP Connection(2)-127.0.0.1] INFO  c.e.s.controller.ItemController -- Initializing item controller 
 08:43:25.317 [RMI TCP Connection(2)-127.0.0.1] INFO  c.e.s.controller.CustomerController -- Initializing customer controller 
 08:43:25.353 [RMI TCP Connection(2)-127.0.0.1] INFO  c.e.s.controller.ItemController -- Initializing item controller 
+08:56:25.457 [RMI TCP Connection(2)-127.0.0.1] INFO  c.e.s.controller.CustomerController -- Initializing customer controller 
+08:56:25.483 [RMI TCP Connection(2)-127.0.0.1] INFO  c.e.s.controller.ItemController -- Initializing item controller 
+09:11:48.624 [RMI TCP Connection(2)-127.0.0.1] INFO  c.e.s.controller.CustomerController -- Initializing customer controller 
+09:11:48.655 [RMI TCP Connection(2)-127.0.0.1] INFO  c.e.s.controller.ItemController -- Initializing item controller 
+09:14:54.533 [RMI TCP Connection(2)-127.0.0.1] INFO  c.e.s.controller.CustomerController -- Initializing customer controller 
+09:14:54.568 [RMI TCP Connection(2)-127.0.0.1] INFO  c.e.s.controller.ItemController -- Initializing item controller 
+09:15:51.741 [RMI TCP Connection(2)-127.0.0.1] INFO  c.e.s.controller.CustomerController -- Initializing customer controller 
+09:15:51.759 [RMI TCP Connection(2)-127.0.0.1] INFO  c.e.s.controller.ItemController -- Initializing item controller 
+09:24:49.601 [RMI TCP Connection(4)-127.0.0.1] INFO  c.e.s.controller.CustomerController -- Initializing customer controller 
+09:24:49.637 [RMI TCP Connection(4)-127.0.0.1] INFO  c.e.s.controller.ItemController -- Initializing item controller 
+09:27:11.398 [RMI TCP Connection(2)-127.0.0.1] INFO  c.e.s.controller.CustomerController -- Initializing customer controller 
+09:27:11.413 [RMI TCP Connection(2)-127.0.0.1] INFO  c.e.s.controller.ItemController -- Initializing item controller 
+12:20:31.377 [RMI TCP Connection(2)-127.0.0.1] INFO  c.e.s.controller.CustomerController -- Initializing customer controller 
+12:20:31.442 [RMI TCP Connection(2)-127.0.0.1] INFO  c.e.s.controller.ItemController -- Initializing item controller 
+12:21:16.305 [RMI TCP Connection(2)-127.0.0.1] INFO  c.e.s.controller.CustomerController -- Initializing customer controller 
+12:21:16.319 [RMI TCP Connection(2)-127.0.0.1] INFO  c.e.s.controller.ItemController -- Initializing item controller 
+12:46:55.991 [RMI TCP Connection(2)-127.0.0.1] INFO  c.e.s.controller.CustomerController -- Initializing customer controller 
+12:49:44.047 [RMI TCP Connection(2)-127.0.0.1] INFO  c.e.s.controller.CustomerController -- Initializing customer controller 
+12:49:51.945 [http-nio-8080-exec-2] DEBUG c.e.s.controller.CustomerController -- called doPost method 
