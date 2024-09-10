@@ -24,7 +24,7 @@ import java.sql.Connection;
 import java.sql.SQLException;
 
 
-//@WebServlet(urlPatterns = "/item",loadOnStartup = 2)
+@WebServlet(urlPatterns = "/item",loadOnStartup = 2)
 public class ItemController extends HttpServlet {
 
     static Logger logger= LoggerFactory.getLogger(ItemController.class);

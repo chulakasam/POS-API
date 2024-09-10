@@ -10,14 +10,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b29a73db-b9e4-4ba1-81d6-a32129272108" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/f290321a-7b90-4139-864a-0663182c5407.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/f290321a-7b90-4139-864a-0663182c5407.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/f290321a-7b90-4139-864a-0663182c5407/storage_v2/_src_/schema/Store-Management-API.HMh36A.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/f290321a-7b90-4139-864a-0663182c5407/storage_v2/_src_/schema/Store-Management-API.HMh36A.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app.log" beforeDir="false" afterPath="$PROJECT_DIR$/app.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/storemanagementbackend/HelloServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/storemanagementbackend/Dao/ItemData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/storemanagementbackend/Dao/ItemData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/storemanagementbackend/Dao/ItemDataImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/storemanagementbackend/Dao/ItemDataImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/storemanagementbackend/controller/CustomerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/storemanagementbackend/controller/CustomerController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/storemanagementbackend/controller/ItemController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/storemanagementbackend/controller/ItemController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/storemanagementbackend/controller/OrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/storemanagementbackend/controller/OrderController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,6 +43,9 @@
     <option name="FILTER_INFO" value="true" />
     <option name="FILTER_DEBUG" value="true" />
     <option name="CUSTOM_FILTER" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 4
@@ -90,7 +92,7 @@
       <deployment>
         <artifact name="Store-Management-BACKEND:war exploded">
           <settings>
-            <option name="CONTEXT_PATH" value="/customer" />
+            <option name="CONTEXT_PATH" value="/Store-Management-BACKEND" />
           </settings>
         </artifact>
       </deployment>
@@ -197,7 +199,11 @@
       <workItem from="1724808901711" duration="2770000" />
       <workItem from="1724811742682" duration="314000" />
       <workItem from="1724812065025" duration="4840000" />
-      <workItem from="1724820273714" duration="6348000" />
+      <workItem from="1724820273714" duration="10841000" />
+      <workItem from="1724908526325" duration="109000" />
+      <workItem from="1725073654057" duration="797000" />
+      <workItem from="1725079513854" duration="3000" />
+      <workItem from="1725933588466" duration="3371000" />
     </task>
     <servers />
   </component>

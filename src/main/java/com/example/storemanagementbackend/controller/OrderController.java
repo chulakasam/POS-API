@@ -21,7 +21,7 @@ import java.io.IOException;
 import java.sql.Connection;
 import java.sql.SQLException;
 
-//@WebServlet(urlPatterns = "/order", loadOnStartup = 3)
+@WebServlet(urlPatterns = "/order", loadOnStartup = 3)
 public class OrderController extends HttpServlet {
 
     static Logger logger = LoggerFactory.getLogger(OrderController.class);

@@ -8,7 +8,7 @@ import java.sql.Connection;
 public interface ItemData {
 
 
-    ItemDTO getItem(String id, Connection connection);
+    ItemDTO getItem(String code , Connection connection);
     String saveItem(ItemDTO itemDTO, Connection connection);
     String deleteItem(String id,Connection connection);
 
